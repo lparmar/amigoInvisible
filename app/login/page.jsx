@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Form from "next/form";
 
 export default function LoginPage() {
   return (
@@ -16,7 +17,7 @@ export default function LoginPage() {
                 height={38}
                 priority
               />
-              <form className="flex flex-col gap-4 w-full">
+              <Form className="flex flex-col gap-4 w-full">
                 <input
                   placeholder="Correo"
                   className="border p-3 rounded-2xl border-gray-300 w-full"
@@ -27,7 +28,7 @@ export default function LoginPage() {
                 >
                   Entrar
                 </button>
-              </form>
+              </Form>
               <a
                 className="flex items-center gap-2 hover:underline"
                 href="https://nextjs.org/learn"
