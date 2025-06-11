@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
-import { login } from '@/services/authService'
+// import { useState } from 'react'
+// import { login } from '@/services/authService'
 
 const LoginPage = () => {
-  const [email, setEmail] = useState('')
+//   const [email, setEmail] = useState('')
 
-const handleSubmit = async (e) => {
-  e.preventDefault()
-  const response = await login(email)
-}
+// const handleSubmit = async (e) => {
+//   e.preventDefault()
+//   const response = await login(email)
+// }
 
   return (
     <>
@@ -30,16 +30,17 @@ const handleSubmit = async (e) => {
                   height={38}
                   priority
                 />
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
+                <form className="flex flex-col gap-4 w-full">
                   <input
                     placeholder="Correo"
                     className="border p-3 rounded-2xl border-gray-300 w-full"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    //onSubmit={handleSubmit}
+                    //value={email}
+                    //onChange={(e) => setEmail(e.target.value)}
                   />
                   <button
                     type="submit"
-                    className="bg-emerald-300 text-gray-700 p-3 rounded-2xl w-full font-semibold hover:bg-emerald-400 transition"
+                    className="bg-amber-700 text-white p-3 rounded-2xl w-full font-semibold hover:bg-amber-600 transition"
                   >
                     Entrar
                   </button>
