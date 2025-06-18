@@ -16,16 +16,16 @@ const RegisterPage = () => {
           <div className="relative z-10 flex flex-col min-h-screen items-center justify-between p-6 font-[family-name:var(--font-geist-sans)]">
             <main className="flex flex-1 items-center justify-center w-3xl">
               <div className="flex flex-col items-center justify-center w-full gap-6 bg-white p-6 rounded-2xl shadow-lg">
-                <Image
+                {/* <Image
                   className="dark:invert"
                   src="/images/logoLogin.png"
                   alt="LogoLogin"
                   width={180}
                   height={38}
                   priority
-                />
+                /> */}
                 <form className="flex flex-col gap-4 w-full">
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-4 justify-center">
                     <input
                       placeholder="Correo 1"
                       className="border p-3 rounded-2xl border-gray-300 w-[48%]"
@@ -43,12 +43,12 @@ const RegisterPage = () => {
                       className="border p-3 rounded-2xl border-gray-300 w-[48%]"
                     />
                   </div>
-                  <button
+                  {/* <button
                     type="submit"
                     className="bg-amber-700 text-white p-3 rounded-2xl w-full font-semibold hover:bg-amber-600 transition"
                   >
                     Registrar
-                  </button>
+                  </button> */}
                 </form>
               </div>
             </main>
