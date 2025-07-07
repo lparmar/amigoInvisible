@@ -17,7 +17,7 @@ const LoginPage = () => {
         <title>Login</title>
       </Head>
 
-      <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/images/fondo-amigo-invisible.png')" }}>
+      <div className="relative min-h-screen bg-cover bg-center">
         <div className="absolute inset-0 bg-white/70 backdrop-blur-sm">
           <div className="relative z-10 flex flex-col min-h-screen items-center justify-between p-6 font-[family-name:var(--font-geist-sans)]">
             <main className="flex flex-1 items-center justify-center w-3xl xs:w-1/2">
